@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Page</title>
+    <title>My Account Page</title>
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="{% static 'css/web.css' %}">
@@ -24,6 +24,7 @@
 
   <!--  Scroll Back to Top On One CLick  -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 
     <div class="container-fluid p-0 bg-danger text-light" style="height: 35px;">
         <p class="fontsize14 text-end pt-2" style="margin-right: 110px;">FREE DELIVERY OVER $100 ON ALL PRODUCTS</p>
@@ -46,13 +47,13 @@
                   <a class="nav-link ms-md-4 ms-3" href="shop"><p class="link1 mt-md-2 mt-0 mb-0">SHOP</p></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-md-4 ms-3" href="blog"><p class="text-danger mt-md-2 mt-0 mb-0">BLOG</p></a>
+                  <a class="nav-link ms-md-4 ms-3" href="blog"><p class="link1 mt-md-2 mt-0 mb-0">BLOG</p></a>
                 </li> 
                 <li class="nav-item">
                   <a class="nav-link ms-md-4 ms-3" href="contact"><p class="link1 mt-md-2 mt-0 mb-0">CONTACT</p></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link ms-md-4 ms-3" href="myaccount"><p class="link1 mt-md-2 mt-0 mb-0">MY ACCOUNT</p></a>
+                  <a class="nav-link ms-md-4 ms-3" href="myaccount"><p class="text-danger mt-md-2 mt-0 mb-0">MY ACCOUNT</p></a>
                 </li>    
                 <li class="nav-item">
                   <a href="cart"><i class="fa-solid fa-bag-shopping mt-md-3 mt-0 ms-md-4 ms-3 fontsize21 link1"></i></a>
@@ -64,99 +65,52 @@
       </div>
     <!--  NAVBAR END  -->
 
+
     <div class="container-fluid p-0" style="background-color: #f5f5f5;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-6 mt-5 mb-5">
-                    <p class="ms-md-2 ms-5 fontsize25">Blog</p>
+                    <p class="ms-md-2 ms-5 fontsize25">My Account</p>
                 </div>
                 <div class="col-md-2 col-2"></div>
                 <div class="col-md-4 col-4 mt-5 mb-5">
                     <a href="shop" class="link1">
-                        <p class="fontsize15 text-md-end mt-1">> Blog</p>
+                        <p class="fontsize15 text-md-end mt-1">> My Account</p>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
+    
 
-    <div class="container mt-5">
+    <div class="container-fluid">
+    <form action="register" method="post">
         <div class="row">
-            <div class="col-md-6">
-                <div class=" backgroundimage2 p-0">
-                <div class="imagehover p-0"></div></div>
-                    <div class="container-fluid p-0" style="border: 1px solid rgb(214, 214, 214)">
-                        <p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Duis sagitis ipsum prasent</b></p>
-                        <span class="link1 fontsize15 ms-md-3 ms-2">Tips - 0 Comments</span><br>
-                        <p class="text-secondary ms-md-3 ms-2 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo vitae cum consectetur neque soluta reprehenderit, commodi sequi repellat adipisci hic odit dolorum officiis veniam provident excepturi impedit ullam magnam!</p>
-                        <a href="blogone" class="link1"><p class="fontsize16 ms-md-3 ms-2"><u>Continue Reading</u></p></a>
-                    </div>
-            </div>
-            <div class="col-md-6 mt-3 mt-md-0">
-                <div class=" backgroundimage3 p-0">
-                    <div class="imagehover p-0"></div></div>
-                    <div class="container-fluid p-0" style="border: 1px solid rgb(214, 214, 214)">
-                  <p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Tortor neque adpiscing diam</b></p>
-                        <span class="link1 fontsize15 ms-md-3 ms-2">Tips - 0 Comments</span><br>
-                        <p class="text-secondary ms-md-3 ms-2 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo vitae cum consectetur neque soluta reprehenderit, commodi sequi repellat adipisci hic odit dolorum officiis veniam provident excepturi impedit ullam magnam!</p>
-                        <a href="blogtwo" class="link1"><p class="fontsize16 ms-md-3 ms-2"><u>Continue Reading</u></p></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 p-3 p-md-5">
+                <p class="fontsize60 text-center"><b>Register Here</b></p>
+                <div class="col-md-12" style="border:1px solid rgb(200, 200, 200)">
+                    <p class="ms-3 mt-4 fontsize17">Name</p>
+                    <input type="text" name="name" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)">
+                    <p class="ms-3 mt-4 fontsize17">Address</p>
+                    <input type="text" name="address" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)">
+                    <p class="ms-3 mt-4 fontsize17">Email</p>
+                    <input type="email" name="email" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)">
+                    <p class="ms-3 mt-4 fontsize17">Mobile Number</p>
+                    <input type="number" name="mobilenumber" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)">
+                    <p class="ms-3 mt-4 fontsize17">Password</p>
+                    <input type="password" name="registerpassword" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)"><br>
 
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-md-6">
-                <div class=" backgroundimage4 p-0">
-                <div class="imagehover p-0"></div></div>
-                    <div class="container-fluid p-0" style="border: 1px solid rgb(214, 214, 214)">
-                        <p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Vestibulum sapin prin quam</b></p>
-                        <span class="link1 fontsize15 ms-md-3 ms-2">Tips - 0 Comments</span><br>
-                        <p class="text-secondary ms-md-3 ms-2 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo vitae cum consectetur neque soluta reprehenderit, commodi sequi repellat adipisci hic odit dolorum officiis veniam provident excepturi impedit ullam magnam!</p>
-                        <a href="blogthree" class="link1"><p class="fontsize16 ms-md-3 ms-2"><u>Continue Reading</u></p></a>
-                    </div>
-                </div>
-            <div class="col-md-6 mt-3 mt-md-0">
-                <div class=" backgroundimage5 p-0">
-                    <div class="imagehover p-0"></div></div>
-                    <div class="container-fluid p-0" style="border: 1px solid rgb(214, 214, 214)">
-                        <p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Neque adipiscing an cursus</b></p>
-                        <span class="link1 fontsize15 ms-md-3 ms-2">Tips - 0 Comments</span><br>
-                        <p class="text-secondary ms-md-3 ms-2 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo vitae cum consectetur neque soluta reprehenderit, commodi sequi repellat adipisci hic odit dolorum officiis veniam provident excepturi impedit ullam magnam!</p>
-                        <a href="blogfour" class="link1"><p class="fontsize16 ms-md-3 ms-2"><u>Continue Reading</u></p></a>
-                    </div>
+                    <input type="checkbox" id="scales" name="scales" class="mt-4 mt-md-5 ms-md-3 ms-3">
+                    <span class="fontsize17">Remember me</span><br><br>
+                    <center><button class="col-md-6 p-md-3 p-2 col-8 button1 fontsize20"><b>Add Your Account</b></button><br><br>
+                    <a href="myaccount" style="text-decoration: none;"><span class="link1 fontsize18">Login Here !</span><br></a></center><br>
                 </div>
             </div>
+            <div class="col-md-3"></div>
         </div>
-    </div>
-
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-md-6">
-                <div class=" backgroundimage6 p-0">
-                <div class="imagehover p-0"></div></div>
-                    <div class="container-fluid p-0" style="border: 1px solid rgb(214, 214, 214)">
-                        <p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Litora torqent per conubia</b></p>
-                        <span class="link1 fontsize15 ms-md-3 ms-2">Tips - 0 Comments</span><br>
-                        <p class="text-secondary ms-md-3 ms-2 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo vitae cum consectetur neque soluta reprehenderit, commodi sequi repellat adipisci hic odit dolorum officiis veniam provident excepturi impedit ullam magnam!</p>
-                        <a href="blogfive" class="link1"><p class="fontsize16 ms-md-3 ms-2"><u>Continue Reading</u></p></a>
-                    </div>
-                </div>
-            <div class="col-md-6 mt-3 mt-md-0">
-                <div class=" backgroundimage7 p-0">
-                    <div class="imagehover p-0"></div></div>
-                    <div class="container-fluid p-0" style="border: 1px solid rgb(214, 214, 214)">
-                        <p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Praesent libro se cursus ante</b></p>
-                        <span class="link1 fontsize15 ms-md-3 ms-2">Tips - 0 Comments</span><br>
-                        <p class="text-secondary ms-md-3 ms-2 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo vitae cum consectetur neque soluta reprehenderit, commodi sequi repellat adipisci hic odit dolorum officiis veniam provident excepturi impedit ullam magnam!</p>
-                        <a href="blogsix" class="link1"><p class="fontsize16 ms-md-3 ms-2"><u>Continue Reading</u></p></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </form>
     </div>
 
 
@@ -226,6 +180,6 @@
               document.documentElement.scrollTop = 0;
             }
 </script>
-
+    
 </body>
 </html>

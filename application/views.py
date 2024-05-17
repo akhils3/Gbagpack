@@ -11,6 +11,9 @@ from application.models import contactinformation
 def home(request):
     return render(request,"index.html")
 
+def shop(request):
+    return render(request,"shop.html")
+
 def blog(request):
     return render(request,"blog.html")
 
@@ -40,3 +43,6 @@ def myaccount(request):
 
 def forgotpassword1(request):
     return render(request, "forgotpassword.html")
+
+def signup(request):
+    return render(request, "signup.html")

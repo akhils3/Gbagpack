@@ -21,6 +21,7 @@ from application import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home',views.home),
+    path('shop',views.shop),
     path('blog',views.blog),
 
     path('contact',views.contact),
@@ -29,5 +30,7 @@ urlpatterns = [
 
     path('myaccount',views.myaccount),
     path('forgotpassword',views.forgotpassword1),
+    path('signup',views.signup),
+
 
 ]

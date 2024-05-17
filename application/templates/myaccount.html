@@ -83,19 +83,8 @@
     </div>
 
     
-    {% for message in messages %}
-      <div class="alert alert-{{ message.tags }} alert-dismissible mt-4">
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        <strong>!! GBACKPAKE !! </strong> {{ message }}
-      </div>
-    {% endfor %}
-
-    
-
-
     <div class="container-fluid">
     <form action="logindata" method="post">
-    {% csrf_token %}
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 p-3 p-md-5">
