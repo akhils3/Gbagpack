@@ -23,19 +23,20 @@ urlpatterns = [
     path('home',views.home),
     path('shop',views.shop),
     path('blog',views.blog),
-
-    path('contact',views.contact),
-    path('contactdata',views.contactdata1),
-
-
-    path('myaccount',views.myaccount),
-    path('forgotpassword',views.forgotpassword1),
-    path('signup',views.signup),
     path('blogone',views.blogone),
     path('blogtwo',views.blogtwo),
     path('blogthree',views.blogthree),
     path('blogfour',views.blogfour),
     path('blogfive',views.blogfive),
     path('blogsix',views.blogsix),
+
+    path('contact',views.contact),
+    path('contactdata',views.contactdata1),
+
+
+    path('myaccount',views.myaccount),
+    path('forgotpassword',views.forgotpassword),
+    path('signup',views.signup),
+ 
 
 ]

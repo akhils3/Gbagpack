@@ -16,6 +16,24 @@ def shop(request):
 
 def blog(request):
     return render(request,"blog.html")
+def blogone(request):
+    return render(request, "blogone.html")
+
+def blogtwo(request):
+    return render(request, "blogtwo.html")
+
+def blogthree(request):
+    return render(request, "blogthree.html")
+
+def blogfour(request):
+    return render(request, "blogfour.html")
+
+def blogfive(request):
+    return render(request, "blogfive.html")
+
+def blogsix(request):
+    return render(request, "blogsix.html")
+
 
 def contact(request):
     return render(request,"contact.html")
@@ -41,28 +59,13 @@ def myaccount(request):
     return render(request,"myaccount.html")
 
 
-def forgotpassword1(request):
-    return render(request, "forgotpassword.html")
-
 def signup(request):
     return render(request, "signup.html")
 
-def blogone(request):
-    return render(request, "blogone.html")
+def forgotpassword(request):
+    return render(request, "forgotpassword.html")
 
-def blogtwo(request):
-    return render(request, "blogtwo.html")
 
-def blogthree(request):
-    return render(request, "blogthree.html")
 
-def blogfour(request):
-    return render(request, "blogfour.html")
-
-def blogfive(request):
-    return render(request, "blogfive.html")
-
-def blogsix(request):
-    return render(request, "blogsix.html")
 
 
