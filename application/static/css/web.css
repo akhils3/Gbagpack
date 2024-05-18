@@ -98,6 +98,9 @@
     color: white;
 }
 
+.textclrgreen{
+    color: #57bf7b;
+}
 
 
 /*  Hyperlink  */
@@ -305,6 +308,7 @@
 
 
 /*  SHOP PAGE IMAGE HOVER  */
+
 .imagehover3{
     box-shadow: none;
     transition: 0.4s;
