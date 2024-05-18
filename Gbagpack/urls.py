@@ -31,6 +31,11 @@ urlpatterns = [
     path('myaccount',views.myaccount),
     path('forgotpassword',views.forgotpassword1),
     path('signup',views.signup),
-
+    path('blogone',views.blogone),
+    path('blogtwo',views.blogtwo),
+    path('blogthree',views.blogthree),
+    path('blogfour',views.blogfour),
+    path('blogfive',views.blogfive),
+    path('blogsix',views.blogsix),
 
 ]
