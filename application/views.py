@@ -65,7 +65,22 @@ def signup(request):
 def forgotpassword(request):
     return render(request, "forgotpassword.html")
 
+def registerdata1(request):
+    uname = request.POST['name']
+    address1 = request.POST['address']
+    email1 = request.POST['email']
+    phonenumber = request.POST['mobilenumber']
+    registerpassword1 = request.POST['registerpassword']
 
+    if(uname=='' or address1=='' or email1=='' or phonenumber=='' or registerpassword1==''):
+        messages.error(request, "Value can not be empty🤨 ..")
+        return render(request, "signup.html")
+    else:
+        obj2 = RegisterData1(username=uname,address=address1,email=email1,mobilenumber=phonenumber,password=registerpassword1)
+        obj2.save()
+    
+        messages.success(request, "Profile details stored successfully👍.")
+        return render(request, "signup.html")
 
 
 

@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home',views.home),
     path('shop',views.shop),
+    
     path('blog',views.blog),
     path('blogone',views.blogone),
     path('blogtwo',views.blogtwo),
@@ -35,6 +36,8 @@ urlpatterns = [
 
 
     path('myaccount',views.myaccount),
+    path('register', views.registerdata1),
+
     path('forgotpassword',views.forgotpassword),
     path('signup',views.signup),
  
