@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.shortcuts import redirect, render
 from application.models import *
@@ -12,7 +13,9 @@ def home(request):
     return render(request,"index.html")
 
 def shop(request):
-    return render(request,"shop.html")
+    obj=ShopProduct.objects.all()
+    return render(request,'shop.html',{"data":obj})
+
 
 def blog(request):
     return render(request,"blog.html")
@@ -83,4 +86,20 @@ def registerdata1(request):
         return render(request, "signup.html")
 
 
+def logincheck(request):
+    username=request.POST['username']
+    userpassword=request.POST['userpass']
 
+    obj=RegisterData1.objects.all()
+
+    if(username=='' or userpassword==''):
+        messages.warning(request, "value can not empty !")
+        return render(request, "myaccount.html")
+    else:
+        for i in obj:
+            if username==i.username and userpassword==i.password:
+                messages.success(request, "Login Successfully...😊 ")
+                return render(request,'index.html')
+
+    messages.error(request, "User not found ... 😒 ")
+    return render(request,'myaccount.html')   

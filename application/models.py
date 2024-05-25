@@ -24,3 +24,12 @@ class RegisterData1(models.Model):
     def __str__(self):
         return self.username
     
+
+class ShopProduct(models.Model):
+    productname1 = models.CharField(max_length=50)
+    productprice1 = models.IntegerField()
+    productimage=models.ImageField(upload_to='image/')
+
+
+    def __str__(self):
+        return f"{self.productname1} ---- {self.productprice1}"

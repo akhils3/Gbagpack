@@ -1,5 +1,4 @@
 from django.contrib import admin
-from application.models import contactinformation , RegisterData1
 from application.models import *
 
 
@@ -8,3 +7,5 @@ from application.models import *
 admin.site.register(contactinformation)
 
 admin.site.register(RegisterData1)
+
+admin.site.register(ShopProduct)
