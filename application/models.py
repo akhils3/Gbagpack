@@ -33,3 +33,14 @@ class ShopProduct(models.Model):
 
     def __str__(self):
         return f"{self.productname1} ---- {self.productprice1}"
+
+class CartItem(models.Model):
+    productimage=models.CharField( max_length=20)
+    productname=models.CharField( max_length=20)
+    productprice=models.CharField( max_length=10)
+    productquantity=models.CharField(max_length=50,default=1)
+    producttotal=models.CharField(max_length=20,default=50)
+
+    
+    def __str__(self):
+        return f"{self.productname} ---- {self.productprice}"

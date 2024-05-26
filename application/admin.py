@@ -9,3 +9,5 @@ admin.site.register(contactinformation)
 admin.site.register(RegisterData1)
 
 admin.site.register(ShopProduct)
+
+admin.site.register(CartItem)

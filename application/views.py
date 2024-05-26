@@ -103,3 +103,20 @@ def logincheck(request):
 
     messages.error(request, "User not found ... 😒 ")
     return render(request,'myaccount.html')   
+
+
+def cart(request):
+    obj=CartItem.objects.all()
+    return render(request,'cart.html',{'data':obj})
+
+def addtocart(request):
+    c=request.GET.get('imge')
+    a=request.GET.get('nm')
+    b=request.GET.get('price')
+
+    obj=CartItem(productimage=c,productname=a,productprice=b)
+    obj.save()
+    messages.success(request, "Data SuccessFully Add On Cart Page 😍..")
+    
+    obj=ShopProduct.objects.all()
+    return render(request, "shop.html",{'data':obj})

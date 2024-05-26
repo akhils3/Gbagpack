@@ -43,6 +43,9 @@ urlpatterns = [
     path('forgotpassword',views.forgotpassword),
     path('signup',views.signup),
     path('logincheck',views.logincheck),
+    path('cart',views.cart),
+
+    path('addtocart',views.addtocart),
  
 
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
